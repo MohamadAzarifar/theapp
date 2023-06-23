@@ -1,6 +1,4 @@
-import 'package:flutter/material.dart';
-
-import 'appbar.dart';
+part of 'widgets.dart';
 
 class ScreenUI extends StatelessWidget {
   const ScreenUI({super.key, this.appBar});

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:theapp/widgets/appbar.dart';
-import 'package:theapp/widgets/screen.dart';
+import 'package:theapp/widgets/widgets.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({super.key});

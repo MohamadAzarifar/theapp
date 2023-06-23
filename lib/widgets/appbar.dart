@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:theapp/constants/size.dart';
+part of 'widgets.dart';
 
 class AppbarUI extends StatelessWidget implements PreferredSizeWidget {
   const AppbarUI({super.key});
