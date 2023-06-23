@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:theapp/routes/list_screen.dart';
-import 'package:theapp/widgets/widgets.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:theapp/blocs/theme/theme_bloc.dart';
+import 'package:theapp/components/components.dart';
 
-class MyApp extends StatelessWidget {
-  MyApp({super.key});
-
-  final IThemeUI _theme = ThemeUI();
+class App extends StatelessWidget {
+  const App({super.key});
 
   @override
-  Widget build(BuildContext context) => MaterialApp(
-        theme: _theme.light,
-        darkTheme: _theme.dark,
-        home: const ListScreen(),
+  Widget build(BuildContext context) => MultiBlocProvider(
+        providers: [
+          BlocProvider<ThemeBloc>(create: (_) => ThemeBloc()),
+        ],
+        child: const AppCmpn(),
       );
 }
