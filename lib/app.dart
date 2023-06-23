@@ -5,7 +5,13 @@ class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  Widget build(BuildContext context) => const MaterialApp(
-        home: ListScreen(),
+  Widget build(BuildContext context) => MaterialApp(
+        theme: ThemeData(
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.brown,
+            elevation: 0,
+          ),
+        ),
+        home: const ListScreen(),
       );
 }
